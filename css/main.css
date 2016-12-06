@@ -13,27 +13,98 @@ body{
 	font-family: "exo";
 }
 
-#main{
-	width: 100%;
-	height: 648px;
-	float: left;
-	background-image: url(../img/background.jpg);
+#activate:focus{
+	outline: none;
 }
-#act{
-	width: 300px;
-	height: 200px;
-	margin-left: 538px;
-	margin-top: 150px;
-	float: left;
-	background-color: white;
-	border-radius: 10px;
+
+#main{
+    width: 100%;
+    height: 648px;
+    float: left;
+    background-image: url(../img/background.jpg);
+    background-size: cover;
 }
 #activate{
     width: 278px;
     height: 35px;
-    margin: 0 auto;
-    margin-top: 68px;
     font-family: monospace;
-    text-transform: capitalize;
-    font-size: 36px;
+    font-size: 20px;
+    transform: rotate(-90deg);
+    border-top-left-radius: 20px;
+    color: #fff;
+    border-top-right-radius: 20px;
+    margin-top: 280px;
+    margin-right: -121px;
+    /*background-color: #f3741e;*/
+    float: right;
+    border: 3px solid #fff;
+    border-bottom: none;
+    cursor: pointer;
+    animation: color-animation 10s infinite linear alternate;
+}
+@keyframes color-animation{
+	0%{
+		background: #fff;
+	}
+	25%{
+		background: #692f08;
+	}
+	50%{
+		background: #3658f3;
+	}
+	75%{
+		background: #f7e319;
+	}
+	100%{
+		background: #de0000;
+	}
+}
+.activate{
+	margin-left: 66px;
+	float: left;
+	margin-top: 14px;
+}
+#chatbot{
+	width: 500px;
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 50px;
+	background-color: white;
+	display: none;
+}
+#closebot{
+	width: 500px;
+	height: 30px;
+	float: left;
+}
+#close{
+    width: 40px;
+    color: #fff;
+    height: 30px;
+    float: right;
+    border: 0px;
+    background-color: red;
+    cursor: pointer;
+    font-size: 16px;
+}
+#mainchat{
+	width: 500px;
+	height: 425px;
+	float: left;
+}
+#type{
+	width: 500px;
+	height: 45px;
+	float: left;
+}
+#chat{
+	width: 400px;
+	height: 38px;
+	float: left;
+}
+#submit{
+	width: 95px;
+	height: 44px;
+	border: 0px;
+	background-color: rgba(0, 0, 255, 0.33);
 }
