@@ -73,7 +73,7 @@ body{
 	display: none;
 }
 #closebot{
-	width: 500px;
+	width: 100%;
 	height: 30px;
 	float: left;
 }
@@ -89,22 +89,86 @@ body{
 }
 #mainchat{
 	width: 500px;
-	height: 425px;
+	height: 410px;
+	margin-top: 5px;
+	margin-bottom: 5px;
 	float: left;
+	overflow-y :scroll;
+	background-color: rgb(247, 246, 246);
 }
 #type{
-	width: 500px;
+	width: 100%;
 	height: 45px;
 	float: left;
 }
 #chat{
-	width: 400px;
+	width: 350px;
 	height: 38px;
-	float: left;
+	float: right;
+	padding-left: 5px;
+    font-size: 15px;
+}
+#fon{
+	width: 45px;
+	height: 45px;
+	float: right;
+}
+.edit{
+	margin-left: 16px;
+    margin-top: 13px;
 }
 #submit{
-	width: 95px;
-	height: 44px;
-	border: 0px;
+    width: 90px;
+    height: 44px;
+    border: 0px;
+    float: right;
+    font-size: 15px;
+    background-color: rgba(0, 0, 255, 0.33);
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.send{
+	color: white;
+}
+.txtfield{
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	min-height: 50px;
+	float: left;
+}
+.txtield{
+	width: 100%;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	min-height: 50px;
+	float: right;
+}
+.atext{
+	min-width: 2%;
+	max-width: 60%;
+	min-height: 40px;
 	background-color: rgba(0, 0, 255, 0.33);
+	border-radius: 5px;
+	float: left;
+	margin-left: 10px;
+}
+.aext{
+	min-width: 2%;
+	max-width: 60%;
+	min-height: 40px;
+	background-color: rgba(0, 0, 255, 0.33);
+	border-radius: 5px;
+	float: right;
+	margin-right: 10px;
+}
+.amesg{
+	float: left;
+	padding: 10px;
+
+}
+.aesg{
+	float: left;
+	padding: 10px;
+
 }

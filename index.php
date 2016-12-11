@@ -17,10 +17,29 @@
 				<i class="fa fa-close" aria-hidden="true"></i>
 			</button>
 		</div>
-		<div id="mainchat"></div>
+		<div id="mainchat">
+			 <div class="txtfield">
+				<div class="atext"><span class="amesg"><strong>Hi WeatherBot Here!!!</strong></span></div>
+			</div>
+			<div class="txtfield">
+			    <div class="atext"><span class="amesg">
+			     <strong>Here are my commands :</strong></br>
+			     /getcurrentweather-current weather of a place</br>
+			     /getdayssweather-check days weather</br>
+			     /getweeksweather-check weeks weather</br>
+			     /getnextdaysweather- weather for next day</br>
+			     </span>
+			    </div>
+			</div>  
+		</div>
 		<div id="type">
-			<input placeholder="type new message" type="text" id="chat" name="chat" />
-			<button id="submit">send</button>
+		    <button id="submit" onclick="sndmesg()">
+		    	<i class="fa fa-send send"></i>
+		    </button>
+			<input placeholder="engage bot" type="text" id="chat" name="chat" />
+			<div id="fon">
+			 <i class="fa fa-reorder edit"  araia-hidden="true"></i>
+			</div>
 		</div>
 	</div>
 </div>
@@ -32,6 +51,14 @@
 	function hidediv(){
 		$('#chatbot').fadeOut(200);
 		$('#activate').fadeIn(200);
+	}
+	function sndmesg(){
+		var txt = $('#chat').val();
+		if (txt != '') {
+			var txts = document.getElementById("mainchat").innerHTML;
+			document.getElementById("mainchat").innerHTML = txts + '<div class="txtield"><div class="aext"><span class="aesg">'+txt+'</span></div></div>';
+			document.getElementById("chat").value = '';
+		};
 	}
 </script>
 </body>
