@@ -94,7 +94,7 @@ body{
 	margin-bottom: 5px;
 	float: left;
 	overflow-y :scroll;
-	background-color: rgb(247, 246, 246);
+	background-color: rgba(0, 0, 0, 0.21);
 }
 #type{
 	width: 100%;
@@ -148,7 +148,7 @@ body{
 	min-width: 2%;
 	max-width: 60%;
 	min-height: 40px;
-	background-color: rgba(0, 0, 255, 0.33);
+	background-color: #ffffff;
 	border-radius: 5px;
 	float: left;
 	margin-left: 10px;
@@ -157,7 +157,7 @@ body{
 	min-width: 2%;
 	max-width: 60%;
 	min-height: 40px;
-	background-color: rgba(0, 0, 255, 0.33);
+	background-color: rgba(0, 185, 236, 0.47);
 	border-radius: 5px;
 	float: right;
 	margin-right: 10px;
