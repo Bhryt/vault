@@ -26,6 +26,7 @@ function sendMessage($chatid, $message){
 	if ($mesg1 == "/") {
 		if ($mesg == "/start") {
 			sendMessage($chatid, "Am a weather Bot
+				             
 				             These are my command(s)
 				                  /getweather");
 		}
